@@ -14,7 +14,7 @@ class GFAT_Admin {
 	public function add_form_settings_tab( $tabs, $form_id ) {
 		$tabs[] = array(
 			'name'  => 'gfat',
-			'label' => __( 'Abandonment', 'gf-form-abandonment-tracker' ),
+			'label' => __( 'Abandoned Fields', 'gf-form-abandonment-tracker' ),
 			'icon'  => 'dashicons-chart-area',
 		);
 
@@ -29,7 +29,7 @@ class GFAT_Admin {
 		$total  = GFAT_DB::total_for_form( $form_id );
 		$breakdown = GFAT_DB::counts_by_form( $form_id );
 
-		echo '<h3>' . esc_html__( 'Form Abandonment', 'gf-form-abandonment-tracker' ) . '</h3>';
+		echo '<h3>' . esc_html__( 'Abandoned Fields', 'gf-form-abandonment-tracker' ) . '</h3>';
 		echo '<p>' . sprintf(
 			/* translators: %d: number of abandoned sessions */
 			esc_html__( '%d visitor(s) started this form without submitting it.', 'gf-form-abandonment-tracker' ),
