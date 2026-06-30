@@ -15,6 +15,7 @@ class GFAT_Admin {
 		$tabs[] = array(
 			'name'  => 'gfat',
 			'label' => __( 'Abandonment', 'gf-form-abandonment-tracker' ),
+			'icon'  => 'dashicons-chart-area',
 		);
 
 		return $tabs;
